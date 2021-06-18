@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(47, 52, 70);
+        }
+
+        .Box {
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            border: none;
+            height: 450px;
+            width: 250px;
+            padding: 50px;
+            margin: 100px auto;
+            box-shadow: 15px 15px 20px 5px rgb(91, 102, 128);
+        }
+
+        header {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-bottom: 2px solid rgb(94, 85, 85);
+            padding: 0px 80px;
+            margin-bottom: 40px;
+        }
+
+        input {
+            border-radius: 10px;
+
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            padding: 8px;
+            width: 100%;
+            margin: 0px 0px 30px;
+            margin-top: 8px;
+            outline: none;
+        }
+
+        button {
+            border-radius: 25px;
+            border: none;
+            width: 245px;
+            padding: 8px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(47, 52, 70);
+            box-shadow: 12px 12px 20px rgb(91, 102, 128);
+            outline: none;
+        }
+
+        button:hover {
+            background-color: rgb(69, 77, 104);
+            box-shadow: 12px 12px 20px rgb(105, 107, 116);
+        }
+
+        footer {
+            color: gray;
+            margin: 20px 0px 0px 15px;
+            padding: 2px;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Box">
+            <form>
+                <header>
+                    <h1>Login</h1>
+                </header>
+                <main>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Email Id" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                        title="Please Enter -Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:" required>
+                      <!--Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:-->
+                    <button type="submit">Login</button>
+                </main>
+                <footer>
+                    <h5>Forgot <a href="#">Passoword?</a> <br>
+                        Don't have an account?<a href="#">Sign up</a>
+                    </h5>
+                </footer>
+            </form>
+        </div>
+        <!--
+            # developed by: Hrithik Sawant
+        -->
+    </div>
+</body>
+
+</html>
